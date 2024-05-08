@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+   width: 1920px;
+   margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 96px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+header img{
+    width: 90px;
+}
+
+header div{
+    width: 90px;
+}
+
+header menu{
+    display: flex;
+    justify-content: space-around;
+}
+header menu a{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px;
+    margin:18px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+header menu a:hover{
+    border: 1px solid #c8c8c8;
+    font-weight: bold;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 460px;
+    background-color:#fafafa;
+}
+
+
+
+.context{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /* border: 1px solid black; */
+    height: 160px;
+    position: relative;
+}
+
+#quote1{
+    width: 51px;
+    align-self: start;
+}
+
+#quote2{
+    width: 51px;
+    align-self: end;
+}
+
+#mark1{
+    position: absolute;
+    width: 148px;
+    right: 34px;
+    bottom: 85px;
+    z-index: 1;
+}
+#mark2{
+    position: absolute;
+    width: 148px;
+    height: 8px;
+    right: 54px;
+    bottom: 41px;
+    z-index: 1;
+}
+
+.context p{
+    font-size: 24px;
+    line-height: 1.9;
+    text-align: center;
+    align-self:center;
+    z-index: 5;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+}
+
+.title .info_context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 298px;
+    margin: 42px 12px 0px 12px;
+}
+
+.info_context h2{
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 4px;
+    color: #5b5b5b;
+    margin-bottom: 10px;
+    border-bottom:2px solid #c1c1c1;
+}
+
+.info_context p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #3B3B3B;
+}
+
+main{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+main .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+}
+
+.card {
+    width: 636px;
+    margin: 0px 11px 80px 11px;
+    /* border: 1px solid red; */
+}
+
+.card img{
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+}
+.card h1{
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 21px 0 15px 15px;
+    
+}
+
+.card .fs-6 {
+    font-size: 16px;
+    color: #919191;
+    margin-bottom: 29px;
+    margin: 0px 0 29px 15px ;
+}
+
+.card .hashtag {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    margin: 0px 0 0px 15px ;
+}
+
+.card .hashtag p{
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-right: 14px;
+    border-radius: 20px;
+
+}
+
+.pageselector { 
+    display:  flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 152px;
+}
+
+.pageselector a{
+    display: block;
+    color: #1e1e1e;
+    background-color: white;
+    font-size: 24px;
+    text-align: center;
+    /* text-justify: center; */
+    text-decoration: none;
+    line-height: 38px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 0px 8px 0px 8px;
+}
+
+.pageselector a:hover{
+    color: white;
+    background-color: #1e1e1e;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 424px;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+    background-size: auto;
+}
+
+footer .logo_info img{
+    width: 120px;
+}
+footer .logo_info p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 38px;
+    margin-bottom: 32px;
+}
+
+footer .logo_info .email{
+    font-size: 20px;
+    line-height: 30px;
+    color:#919191;
+}
+
+footer .btn {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .btn a{
+    display: flex;
+    align-items: center;
+    width: 306px;
+    height: 72px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    text-decoration: none;
+    background-color: white;
+    color: #3B3B3B;
+    margin: 12px 0px 12px 0px;
+}
+
+footer .btn a:hover{
+    border: 1px solid black;
+}
+
+footer .btn img{
+    margin-left: 35px;
+}
+#sign {
+    background-color: black; 
+    color: white; 
+}
+
+*{
+    font-family: "Noto Sans TC", sans-serif;
+
+}
