@@ -47,9 +47,20 @@ table {
 	border-spacing: 0;
 }
 
+/* 以上為 CSS RESET  */
+/* box-sizing 把 border 算近 box 尺寸內，不用算內距*/
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 body{
-   width: 1920px;
-   margin: 0 auto;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 header{
@@ -59,10 +70,10 @@ header{
     height: 96px;
     border-bottom: 1px solid #F1F1F1;
 }
-
+/* 
 header img{
     width: 90px;
-}
+} */
 
 header div{
     width: 90px;
@@ -134,7 +145,7 @@ header menu a:hover{
     z-index: 1;
 }
 
-.context p{
+.context h1{
     font-size: 24px;
     line-height: 1.9;
     text-align: center;
@@ -194,7 +205,7 @@ main .cards{
     border-radius: 5px;
     border: 1px solid #f1f1f1;
 }
-.card h1{
+.card h2{
     font-size: 28px;
     font-weight: bolder;
     margin: 21px 0 15px 15px;
@@ -259,9 +270,9 @@ footer{
     background-size: auto;
 }
 
-footer .logo_info img{
+/* footer .logo_info img{
     width: 120px;
-}
+} */
 footer .logo_info p{
     font-size: 20px;
     line-height: 30px;
