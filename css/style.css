@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 1920px; /* 設給大於 FullHD 尺寸用的*/
   display: flex;
   position: fixed;
   top: 0;
@@ -25,6 +25,12 @@ header {
   border-bottom: 1px solid #f1f1f1;
   padding: 32px 0 32px 0;
   z-index: 2;
+}
+
+@media (max-width:1920px) {
+  header {
+    width: 100%;
+  }
 }
 
 header h1 a {
@@ -551,6 +557,13 @@ footer .sign a{
 
 footer .contact a:hover{
     border: 1px solid black;
+}
+
+
+@media (max-width: 1421px) {
+  footer{
+      padding: 80px 160px 80px 160px;
+  }
 }
 
 @media (max-width: 1025px) {
